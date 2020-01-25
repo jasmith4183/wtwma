@@ -140,6 +140,9 @@ body{
 h1{text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+a.chosen, a:hover{
+  border-bottom: 2px solid orange;
+}
 
 div{
   /* color: #ffffff; */

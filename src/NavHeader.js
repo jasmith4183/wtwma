@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 export default function NavHeader() {
     return (
@@ -9,11 +9,11 @@ export default function NavHeader() {
             <div className="Nav-Head">
                 <nav>
                     <ul className="Nav-Links">
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/radar"><li>Radar</li></Link>
-                    <Link to="/"><li>Forecast</li></Link>
-                    <Link to="/"><li>Research</li></Link>
-                    <Link to="/"><li>Climatology</li></Link>
+                    <NavLink exact activeClassName="chosen" to="/"><li>Home</li></NavLink>
+                    <NavLink activeClassName="chosen" to="/radar"><li>Radar</li></NavLink>
+                    <NavLink activeClassName="chosen" to="/forecast"><li>Forecast</li></NavLink>
+                    <NavLink activeClassName="chosen" to="/research"><li>Research</li></NavLink>
+                    <NavLink activeClassName="chosen" to="/climatology"><li>Climatology</li></NavLink>
                 </ul>
                 </nav>
             </div>
