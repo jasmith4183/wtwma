@@ -1,11 +1,12 @@
 
 
 .Header-Logo{
+  
   position: absolute;
   top: 0px;
 }
 .Header-Logo-Img{
-  width: 160px;
+  width: calc(160px + (260 - 160) * ((100vw - 300px) / (1600 - 300)));
   position: relative;
   top: 0px;
   z-index: 1;
@@ -30,15 +31,15 @@
 }
 .Header-Container{
   border-bottom: ivory solid 3px;
-  height: auto; 
+  height: calc(160px + (260 - 160) * ((100vw - 300px) / (1600 - 300))); 
   font-size: 1.5em;
   width:inherit;
   text-align: center;
 }
 .Header-Text{
-  font-size: calc(2.07vw + 10.25px);
+  font-size: calc(24px + (40 - 24) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
-  padding-left: 160px;
+  padding-left: calc(160px + (260 - 160) * ((100vw - 300px) / (1600 - 300)));
 }
 .Nav-Head {
   display: flex;
