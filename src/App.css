@@ -42,6 +42,7 @@
   padding-left: calc(160px + (260 - 160) * ((100vw - 300px) / (1600 - 300)));
 }
 .Nav-Head {
+  overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -49,11 +50,11 @@
   border: none;
   background-color:rgba(18, 140, 222, 0.5);
   padding-left: 160px;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
+  /* padding-top: 0;
+  padding-bottom: 0; */
   cursor: pointer;
   text-align: center;
-  /* color:#ffffff; */
+  
   font-family:Arial;
   font-size: .6em;
   font-weight:bold;
@@ -71,17 +72,15 @@
   }
     li.Nav-Head-Item{
       float: left;
-      /* color: white;
-      text-align: center;
-      padding: 15px;
-      overflow: hidden; */
+      
     }
-    li.Nav-Head-Item, a {
+    .Nav-Head-Item {
       display: block;
-      /* color: white; */
+      color: ivory;
       text-align: center;
-      padding: 14px 16px;
+      padding: 24px 16px;
       text-decoration: none;
+      border-right: ivory 3px solid;
     }
     li.Nav_head-Item:hover, a:hover {
       background-color: #FFFFFF55;
@@ -100,16 +99,20 @@
   font-size: .5em;
   height: 200px;
   border: ivory solid 3px;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
 }
 .Nav-Footer{
-  
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 .Footer-Container{
-  
+  box-sizing: border-box;
   background-color:rgba(3, 32, 87, 0.5);
-  padding-top: 20px;
-  border-top: ivory solid 3px;
+  padding: 5px;
+  /* border-top: ivory solid 3px; */
   width: 100%;
 }
 
@@ -146,10 +149,8 @@ a.chosen, a:hover{
 }
 
 div{
-  /* color: #ffffff; */
   font-family:Arial;
   font-weight:bold;
-  /* font-size:28px; */
   width: inherit;
   padding: 0px;
 }
@@ -159,7 +160,6 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
   color: ivory;
   
 }

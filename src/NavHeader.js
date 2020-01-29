@@ -9,11 +9,11 @@ export default function NavHeader() {
             <div className="Nav-Head">
                 <nav>
                     <ul className="Nav-Links">
-                    <NavLink exact activeClassName="chosen" to="/"><li>Home</li></NavLink>
-                    <NavLink activeClassName="chosen" to="/radar"><li>Radar</li></NavLink>
-                    <NavLink activeClassName="chosen" to="/forecast"><li>Forecast</li></NavLink>
-                    <NavLink activeClassName="chosen" to="/research"><li>Research</li></NavLink>
-                    <NavLink activeClassName="chosen" to="/climatology"><li>Climatology</li></NavLink>
+                    <NavLink className="Nav-Head-Item" exact activeClassName="chosen" to="/"><li>Home</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/radar"><li>Radar</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/forecast"><li>Forecast</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/research"><li>Research</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/climatology"><li>Climatology</li></NavLink>
                 </ul>
                 </nav>
             </div>

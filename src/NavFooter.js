@@ -32,9 +32,9 @@ export default function NavFooter() {
                 <div className="Nav-Footer-Section">
                     <h3>Research</h3>
                     <ul>
-                    <li>NCAR</li>
-                    <li>SwRI</li>
-                    <li>DRI</li>
+                    <a href="http://ncar.ucar.edu/"><li>NCAR</li></a>
+                    <a href="http://www.swri.org/"><li>SwRI</li></a>
+                    <a href="http://www.dri.edu/"><li>DRI</li></a>
                 </ul>
                 </div>
             </div>
