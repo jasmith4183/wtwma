@@ -5,7 +5,7 @@ export default function NavFooter() {
     <>
         <div className="Footer-Container">
             <div className="Nav-Footer-Main">
-                <div className="Nav-Footer-Section">
+                <div className="Nav-Footer-Section-1">
                     <h3>Weather Links</h3>
                     <ul> 
                         <li>West Texas Sat Img</li>
@@ -18,7 +18,7 @@ export default function NavFooter() {
                         <li>CoCoRaHS</li>
                     </ul>
                 </div>
-                <div className="Nav-Footer-Section">
+                <div className="Nav-Footer-Section-2">
                     <h3>Weather Modification</h3>
                     <ul>
                     <li> Texas Wx Mod Assoc.</li>
@@ -29,7 +29,7 @@ export default function NavFooter() {
                     <li>Weather Mod. Assoc.</li>
                     </ul>
                 </div>
-                <div className="Nav-Footer-Section">
+                <div className="Nav-Footer-Section-3">
                     <h3>Research</h3>
                     <ul>
                     <a href="http://ncar.ucar.edu/"><li>NCAR</li></a>

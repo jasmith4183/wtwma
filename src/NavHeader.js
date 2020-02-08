@@ -1,10 +1,10 @@
 import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export default function NavHeader() {
     return (
         <div className="Header-Container">
-            <div className="Header-Logo"><img src="./Untitled.png" className="Header-Logo-Img" alt=""></img></div>
+            <div className="Header-Logo"><img src="./Untitled.png" alt=""></img></div>
             <div className="Header-Text">West Texas Weather Modification Association</div>
             <div className="Nav-Head">
                 <nav>
