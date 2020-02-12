@@ -48,7 +48,7 @@ a{
 }
 .Header-Logo>img{
   position: relative;
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
 }
 .Header-Text{
@@ -100,7 +100,7 @@ a{
     display: block;
     text-align: center;
     padding: .5em 16px;
-    border-right: ivory 3px solid;
+    /* border-right: ivory 3px solid; */
     /* test; */
     /* width: 100%; */
   }

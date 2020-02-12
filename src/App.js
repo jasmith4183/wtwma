@@ -5,8 +5,9 @@ import Footer from './Footer';
 import Header from './Header';
 import HomeBody from './HomeBody';
 import Radar from './Radar';
+import Forecast from './Forecast';
+import Operations from './Operations';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-// export const twma={org: "Texas"} 
 function App() {
   return (
     <>
@@ -16,10 +17,15 @@ function App() {
       <Router>
       {/* <Header /> */}
       <Route path="/" exact render={(routeProps)=> (<Header{...routeProps} {...twma}/>)}/>
-      <Route path="/wtwma" render={(routeProps)=> (<Header{...routeProps} {...wtwma}/>)}/>
-      <Route path="/tpwma" render={(routeProps)=> (<Header{...routeProps} {...tpwma}/>)}/>
       <Route path="/" exact component={HomeBody}/>
-      <Route path="/radar" component={Radar}/>
+      
+      <Route path="/wtwma" render={(routeProps)=> (<Header{...routeProps} {...wtwma}/>)}/>
+      <Route path="/wtwma/radar" component={Radar}/>
+      <Route path="/wtwma/forecast" component={Forecast}/>
+      <Route path="/wtwma/operations" component={Operations}/>
+      
+      <Route path="/tpwma" render={(routeProps)=> (<Header{...routeProps} {...tpwma}/>)}/>
+      
       <Footer />
       </Router>
     </div>

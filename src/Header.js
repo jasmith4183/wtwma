@@ -10,10 +10,10 @@ export default function Header(props) {
                 {/* <nav> */}
                     <ul className="Nav-Head-Links"> 
                     <NavLink className="Nav-Head-Item" exact activeClassName="chosen" to="/"><li>Home</li></NavLink>
-                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/radar"><li>Radar</li></NavLink>
-                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/forecast"><li>Forecast</li></NavLink>
-                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/operations"><li>Operations</li></NavLink>
-                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/analysis"><li>Analysis</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/wtwma/radar"><li>Radar</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/wtwma/forecast"><li>Forecast</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/wtwma/operations"><li>Operations</li></NavLink>
+                    <NavLink className="Nav-Head-Item" activeClassName="chosen" to="/wtwma/analysis"><li>Analysis</li></NavLink>
                 </ul>
                 {/* </nav> */}
             </div>
