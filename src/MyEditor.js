@@ -5,7 +5,8 @@ class MyEditor extends Component {
     constructor(props) {
         super(props);
         this.state = { };
-        const content = window.localStorage.getItem('content'); 
+        const content = window.localStorage.getItem(JSON.stringify(props.name));
+        console.log(props.name); 
         if (content) {
             this.state.editorState = EditorState.createWithContent(convertFromRaw(JSON.parse(content)));
         } 
@@ -22,7 +23,7 @@ class MyEditor extends Component {
             return 'not-handled';
     }
     saveContent = (content) => {
-        window.localStorage.setItem('content', JSON.stringify(convertToRaw(content)));
+        window.localStorage.setItem(JSON.stringify(this.props.name), JSON.stringify(convertToRaw(content)));
     }
     onChange = (editorState) => {
         const contentState = editorState.getCurrentContent();
@@ -37,13 +38,13 @@ class MyEditor extends Component {
       return (
           <div>
               <Editor
-              readOnly={false}
+              readOnly={!this.props.canEdit}
               enableHorizontalRule
               showUndoControl
               editorState={this.state.editorState} 
               onChange={this.onChange}
               handleKeyCommand={this.handleKeyCommand}
-              placeholder="Tell a story..." />
+              placeholder={this.props.name} />
           </div>
       );
     }
